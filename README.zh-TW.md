@@ -17,7 +17,8 @@ B70 的主人只需要複製貼上就可以快速體驗, 節省折騰時間
 ```yaml
 services:
   vllm-xpu:
-    image: vllm/vllm-openai-xpu:v0.33.0
+    image: intel/llm-scaler-vllm:0.31.0-b1-experimental
+    # image: vllm/vllm-openai-xpu:v0.33.0
     container_name: vllm-xpu-qwen38-prod
     ports:
       - "127.0.0.1:55850:5850"
