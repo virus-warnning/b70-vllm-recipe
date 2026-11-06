@@ -10,6 +10,8 @@ Since vLLM 0.31.0, it has been quite friendly to Intel Arc B series products. Wi
 
 Current open-source models also deliver a decent level of capability and performance.
 
+The recipe covers model selection, speculative decoding, Tensor Parallelism, and workload parameter optimization.
+
 B70 owners can simply copy and paste to quickly experience inference, saving you the hassle of tinkering.
 
 ## compose.yaml
@@ -73,7 +75,7 @@ SPEC_TOKENS=3
 # - 65536   64K   Minimum
 # - 131072  128K  Suitable for daily development
 # - 163840  160K  Likely the limit for Qwen 3.8 27B
-# - 262144  256K  Prone to issues
+# - 262144  256K  Reportedly prone to hallucinations
 CONTEXT_LENGTH=163840
 
 # VRAM pre-allocation ratio
@@ -120,6 +122,16 @@ HF_HUB_OFFLINE=1 llama-benchy --base-url http://localhost:55850/v1 \
 * CPU: AMD Ryzen 5 9600X
 * Mainboard: ASUS ProArt B850-CREATOR WIFI NEO
 * RAM: TEAM T-CREATE EXPERT 16G x2
+
+## Acknowledgments
+
+Over time, the following contributors have paved the way, making it possible to achieve these results:
+
+* [munikor](https://github.com/munikor/b70-cookbook)
+* [Wrapzii](https://huggingface.co/Wrapzii/Swift-1.5-Qwen3.8-27b-GPTQ-Int4-baked-v1-embed-int8)
+* [Launch80](https://huggingface.co/Launch80/Qwen3.8-27B-GPTQ-Int4-baked-v2)
+* [davetha](https://huggingface.co/davetha/Huihui-Qwen3.8-27B-abliterated-AutoRound-Int4-baked-embed-int8)
+* [SergiioB](https://github.com/SergiioB/intel-arc-pro-b70-inference-cookbook)
 
 ## If You're Lost
 

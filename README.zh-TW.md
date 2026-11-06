@@ -6,11 +6,13 @@
 
 ## 關於這個食譜
 
-自從 vLLM 0.31.0 開始, 對 Intel Arc B 系列產品已經相當友善, 少量的設定就能啟動本地推理引擎
+自從 vLLM 0.31.0 開始, 對 Intel Arc B 系列產品已經相當友善, 少量的設定就能啟動本地推理引擎,
 
 而且目前的開源模型也具備一定程度的工作能力, 也有不錯的性能,
 
-B70 的主人只需要複製貼上就可以快速體驗, 節省折騰時間
+食譜包含了模型選擇、投機解碼、Tensor 平行運算、工作參數最佳化,
+
+B70 的主人們只需要複製貼上就可以快速體驗, 節省折騰時間
 
 ## compose.yaml
 
@@ -73,7 +75,7 @@ SPEC_TOKENS=3
 # - 65536   64K   最低值
 # - 131072  128K  適合日常開發
 # - 163840  160K  可能是 Qwen 3.8 27B 極限
-# - 262144  256K  容易出問題
+# - 262144  256K  聽說容易幻覺
 CONTEXT_LENGTH=163840
 
 # VRAM 預先分配比例
@@ -120,6 +122,16 @@ HF_HUB_OFFLINE=1 llama-benchy --base-url http://localhost:55850/v1 \
 * CPU: AMD Ryzen 5 9600X
 * Mainboard: ASUS ProArt B850-CREATOR WIFI NEO
 * RAM: TEAM T-CREATE EXPERT 16G x2
+
+## 感謝
+
+這段時間有這些大大們走在前面, 讓我可以調出這樣的成果
+
+* [munikor](https://github.com/munikor/b70-cookbook)
+* [Wrapzii](https://huggingface.co/Wrapzii/Swift-1.5-Qwen3.8-27b-GPTQ-Int4-baked-v1-embed-int8)
+* [Launch80](https://huggingface.co/Launch80/Qwen3.8-27B-GPTQ-Int4-baked-v2)
+* [davetha](https://huggingface.co/davetha/Huihui-Qwen3.8-27B-abliterated-AutoRound-Int4-baked-embed-int8)
+* [SergiioB](https://github.com/SergiioB/intel-arc-pro-b70-inference-cookbook)
 
 ## 如果看不懂
 
