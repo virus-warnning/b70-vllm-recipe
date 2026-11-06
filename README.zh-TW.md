@@ -127,11 +127,11 @@ HF_HUB_OFFLINE=1 llama-benchy --base-url http://localhost:55850/v1 \
 
 這段時間有這些大大們走在前面, 讓我可以調出這樣的成果
 
-* [munikor](https://github.com/munikor/b70-cookbook)
-* [Wrapzii](https://huggingface.co/Wrapzii/Swift-1.5-Qwen3.8-27b-GPTQ-Int4-baked-v1-embed-int8)
-* [Launch80](https://huggingface.co/Launch80/Qwen3.8-27B-GPTQ-Int4-baked-v2)
-* [davetha](https://huggingface.co/davetha/Huihui-Qwen3.8-27B-abliterated-AutoRound-Int4-baked-embed-int8)
-* [SergiioB](https://github.com/SergiioB/intel-arc-pro-b70-inference-cookbook)
+* [munikor](https://github.com/munikor/b70-cookbook) - vLLM 0.31.0 設定
+* [Wrapzii](https://huggingface.co/Wrapzii/Swift-1.5-Qwen3.8-27b-GPTQ-Int4-baked-v1-embed-int8) - vLLM 0.30.0 設定、優秀的量化模型
+* [Launch80](https://huggingface.co/Launch80/Qwen3.8-27B-GPTQ-Int4-baked-v2) - 優秀的量化模型
+* [davetha](https://huggingface.co/davetha/Huihui-Qwen3.8-27B-abliterated-AutoRound-Int4-baked-embed-int8) - 優秀的量化模型
+* [SergiioB](https://github.com/SergiioB/intel-arc-pro-b70-inference-cookbook) - 入門指引、持續更新的 B70 使用經驗
 
 ## 如果看不懂
 

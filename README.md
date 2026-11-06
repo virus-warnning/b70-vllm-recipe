@@ -127,11 +127,11 @@ HF_HUB_OFFLINE=1 llama-benchy --base-url http://localhost:55850/v1 \
 
 Over time, the following contributors have paved the way, making it possible to achieve these results:
 
-* [munikor](https://github.com/munikor/b70-cookbook)
-* [Wrapzii](https://huggingface.co/Wrapzii/Swift-1.5-Qwen3.8-27b-GPTQ-Int4-baked-v1-embed-int8)
-* [Launch80](https://huggingface.co/Launch80/Qwen3.8-27B-GPTQ-Int4-baked-v2)
-* [davetha](https://huggingface.co/davetha/Huihui-Qwen3.8-27B-abliterated-AutoRound-Int4-baked-embed-int8)
-* [SergiioB](https://github.com/SergiioB/intel-arc-pro-b70-inference-cookbook)
+* [munikor](https://github.com/munikor/b70-cookbook) - vLLM 0.31.0 configuration
+* [Wrapzii](https://huggingface.co/Wrapzii/Swift-1.5-Qwen3.8-27b-GPTQ-Int4-baked-v1-embed-int8) - vLLM 0.30.0 configuration, excellent quantized models
+* [Launch80](https://huggingface.co/Launch80/Qwen3.8-27B-GPTQ-Int4-baked-v2) - Excellent quantized models
+* [davetha](https://huggingface.co/davetha/Huihui-Qwen3.8-27B-abliterated-AutoRound-Int4-baked-embed-int8) - Excellent quantized models
+* [SergiioB](https://github.com/SergiioB/intel-arc-pro-b70-inference-cookbook) - Getting-started guide, continuously updated B70 usage experience
 
 ## If You're Lost
 
